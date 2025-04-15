@@ -1,0 +1,7 @@
+/* Título retro para la ventana principal */
+NoteLiteApp {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+}

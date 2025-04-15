@@ -1,0 +1,83 @@
+/* Tema Cyberpunk para NoteLite */
+
+QWidget {  
+    background-color: #0D0221;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QMainWindow, QDialog { 
+    background-color: #0D0221; 
+}
+
+QPushButton { 
+    background-color: #FA448C;
+    color: #FFFFFF;
+    border: 2px solid #31E8FF;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+QPushButton:hover { 
+    background-color: #31E8FF;
+    color: #0D0221;
+}
+
+QLineEdit, QTextEdit, QListWidget { 
+    background-color: #0D0221;
+    color: #FFFFFF;
+    border: 1px solid #31E8FF;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QTreeView { 
+    background-color: #0D0221;
+    color: #FFFFFF;
+    border: 1px solid #722AFF;
+    selection-background-color: #31E8FF;
+    selection-color: #0D0221;
+}
+
+QComboBox { 
+    background-color: #FA448C;
+    color: #FFFFFF;
+    border: 1px solid #31E8FF;
+    border-radius: 2px;
+    padding: 1px 18px 1px 3px;
+}
+
+QMenuBar, QMenu { 
+    background-color: #FA448C;
+    color: #FFFFFF;
+}
+
+QMenu::item:selected, QMenuBar::item:selected { 
+    background-color: #31E8FF;
+    color: #0D0221;
+}
+
+QTabWidget::pane { 
+    border: 1px solid #31E8FF;
+    top: -1px;
+}
+
+QTabBar::tab { 
+    background-color: #FA448C;
+    color: #FFFFFF;
+    border: 1px solid #722AFF;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 5px;
+}
+
+QTabBar::tab:selected { 
+    background-color: #31E8FF;
+    color: #0D0221;
+}
+
+QStatusBar { 
+    background-color: #FA448C;
+    color: #FFFFFF;
+}

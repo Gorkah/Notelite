@@ -1,0 +1,83 @@
+/* Tema Vaporwave para NoteLite */
+
+QWidget {  
+    background-color: #2D0B37;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QMainWindow, QDialog { 
+    background-color: #2D0B37; 
+}
+
+QPushButton { 
+    background-color: #FF6AD5;
+    color: #FFFFFF;
+    border: 2px solid #8C52FF;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+QPushButton:hover { 
+    background-color: #33FFFC;
+    color: #2D0B37;
+}
+
+QLineEdit, QTextEdit, QListWidget { 
+    background-color: #2D0B37;
+    color: #FFFFFF;
+    border: 1px solid #33FFFC;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QTreeView { 
+    background-color: #2D0B37;
+    color: #FFFFFF;
+    border: 1px solid #8C52FF;
+    selection-background-color: #33FFFC;
+    selection-color: #2D0B37;
+}
+
+QComboBox { 
+    background-color: #FF6AD5;
+    color: #FFFFFF;
+    border: 1px solid #33FFFC;
+    border-radius: 2px;
+    padding: 1px 18px 1px 3px;
+}
+
+QMenuBar, QMenu { 
+    background-color: #FF6AD5;
+    color: #FFFFFF;
+}
+
+QMenu::item:selected, QMenuBar::item:selected { 
+    background-color: #33FFFC;
+    color: #2D0B37;
+}
+
+QTabWidget::pane { 
+    border: 1px solid #33FFFC;
+    top: -1px;
+}
+
+QTabBar::tab { 
+    background-color: #FF6AD5;
+    color: #FFFFFF;
+    border: 1px solid #8C52FF;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 5px;
+}
+
+QTabBar::tab:selected { 
+    background-color: #33FFFC;
+    color: #2D0B37;
+}
+
+QStatusBar { 
+    background-color: #FF6AD5;
+    color: #FFFFFF;
+}

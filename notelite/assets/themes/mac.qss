@@ -1,0 +1,291 @@
+/* Tema Macintosh Clásico */
+
+/* Estilo general de la aplicación */
+QMainWindow {
+    background-color: #E0E0E0; /* Gris claro característico de Mac */
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    border: 1px solid #888888;
+    color: #000000;
+}
+
+/* Panel de navegación */
+QTreeView {
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    padding: 4px;
+    color: #000000;
+}
+
+QTreeView::item {
+    border: none;
+    padding: 4px;
+    height: 25px;
+    color: #000000;
+}
+
+QTreeView::item:selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+QTreeView::item:hover {
+    background-color: #CCCCCC;
+}
+
+/* Botones del panel de navegación */
+QPushButton {
+    background-color: #DDDDDD;
+    border: 2px solid #888888;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    min-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #CCCCCC;
+}
+
+QPushButton:pressed {
+    background-color: #AAAAAA;
+    color: #000000;
+}
+
+/* Editor de texto */
+QTextEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: "Geneva", "Helvetica", sans-serif;
+    font-size: 14px;
+    selection-background-color: #000000;
+    selection-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Título de la nota */
+QLineEdit[class="note-title"] {
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+QLineEdit[class="note-title"]:focus {
+    background-color: #EEEEEE;
+}
+
+/* Barra de herramientas de formato */
+QToolBar {
+    background-color: #DDDDDD;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    spacing: 3px;
+    padding: 3px;
+}
+
+QToolBar QToolButton {
+    background-color: #DDDDDD;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 4px;
+    color: #000000;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #CCCCCC;
+}
+
+QToolBar QToolButton:pressed {
+    background-color: #AAAAAA;
+    color: #000000;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #888888;
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: #000000;
+}
+
+/* Casillas de verificación para tareas */
+QCheckBox {
+    spacing: 8px;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    color: #000000;
+}
+
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888888;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #000000;
+}
+
+/* Menú contextual */
+QMenu {
+    background-color: #DDDDDD;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 2px;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    color: #000000;
+}
+
+QMenu::item {
+    padding: 4px 25px 4px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    width: 16px;
+    margin: 16px 0 16px 0;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #AAAAAA;
+    border: 1px solid #888888;
+    min-height: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    height: 16px;
+    margin: 0 16px 0 16px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #AAAAAA;
+    border: 1px solid #888888;
+    min-width: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    width: 16px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 1px solid #888888;
+    background: #DDDDDD;
+    width: 16px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #DDDDDD;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 3px 8px;
+    min-height: 22px;
+    color: #000000;
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 20px;
+    border-left: 1px solid #888888;
+}
+
+QComboBox::item {
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+QComboBox::item:selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Efectos adicionales */
+QLabel {
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    color: #000000;
+}
+
+QLineEdit {
+    font-family: "Chicago", "Geneva", "Helvetica", sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+/* Efectos adicionales del tema Mac */
+QMainWindow {
+    background-pattern: url(macpattern.png);
+}
+
+QStatusBar {
+    background-color: #DDDDDD;
+    color: #000000;
+    font-family: "Geneva", "Helvetica", sans-serif;
+    border-top: 1px solid #888888;
+}

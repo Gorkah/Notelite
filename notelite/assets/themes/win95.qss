@@ -1,0 +1,294 @@
+/* Tema Windows 95/98 */
+
+/* Estilo general de la aplicación */
+QMainWindow {
+    background-color: #C0C0C0; /* Gris clásico de Windows 95/98 */
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    border: 2px solid #808080;
+}
+
+/* Panel de navegación */
+QTreeView {
+    background-color: #FFFFFF;
+    border: 2px inset #808080;
+    font-size: 13px;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    padding: 4px;
+    color: #000000;
+}
+
+QTreeView::item {
+    border: none;
+    padding: 4px;
+    height: 25px;
+    color: #000000;
+}
+
+QTreeView::item:selected {
+    background-color: #000080; /* Azul clásico de selección */
+    color: #FFFFFF;
+}
+
+QTreeView::item:hover {
+    background-color: #DCDCDC;
+}
+
+/* Botones del panel de navegación */
+QPushButton {
+    background-color: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    border-radius: 0px;
+    padding: 6px 10px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    min-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #DCDCDC;
+}
+
+QPushButton:pressed {
+    border: 2px inset #808080;
+    background-color: #A0A0A0;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+/* Editor de texto */
+QTextEdit {
+    background-color: #FFFFFF;
+    border: 2px inset #808080;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    font-size: 13px;
+    selection-background-color: #000080;
+    selection-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Título de la nota */
+QLineEdit[class="note-title"] {
+    background-color: #FFFFCC; /* Amarillo claro para el título */
+    border: 2px inset #808080;
+    border-radius: 0px;
+    padding: 6px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+QLineEdit[class="note-title"]:focus {
+    background-color: #FFFF99;
+}
+
+/* Barra de herramientas de formato */
+QToolBar {
+    background-color: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    border-radius: 0px;
+    spacing: 3px;
+    padding: 3px;
+}
+
+QToolBar QToolButton {
+    background-color: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    border-radius: 0px;
+    padding: 4px;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #DCDCDC;
+}
+
+QToolBar QToolButton:pressed {
+    border: 2px inset #808080;
+    background-color: #A0A0A0;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #808080;
+}
+
+QSplitter::handle:horizontal {
+    width: 4px;
+}
+
+QSplitter::handle:vertical {
+    height: 4px;
+}
+
+QSplitter::handle:hover {
+    background-color: #000080;
+}
+
+/* Casillas de verificación para tareas */
+QCheckBox {
+    spacing: 8px;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    color: #000000;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px inset #808080;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #000080;
+}
+
+/* Menú contextual */
+QMenu {
+    background-color: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    border-radius: 0px;
+    padding: 2px;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    color: #000000;
+}
+
+QMenu::item {
+    padding: 4px 25px 4px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    background-color: #000080;
+    color: #FFFFFF;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: 1px solid #808080;
+    background: #C0C0C0;
+    width: 16px;
+    margin: 16px 0 16px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #C0C0C0;
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #C0C0C0;
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #808080;
+    background: #C0C0C0;
+    height: 16px;
+    margin: 0 16px 0 16px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #C0C0C0;
+    width: 16px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 2px outset #FFFFFF;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #C0C0C0;
+    width: 16px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #FFFFFF;
+    border: 2px inset #808080;
+    border-radius: 0px;
+    padding: 3px 8px;
+    min-height: 22px;
+    color: #000000;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 20px;
+    border-left: 1px solid #808080;
+}
+
+/* Efectos adicionales */
+QMainWindow::title {
+    background-color: #000080;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+}
+
+/* Estilo adicional para etiquetas */
+QLabel {
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    color: #000000;
+}
+
+QLineEdit {
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px inset #808080;
+    border-radius: 0px;
+    padding: 3px;
+}

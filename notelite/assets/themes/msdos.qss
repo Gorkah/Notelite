@@ -1,0 +1,296 @@
+/* Tema MS-DOS / Terminal Verde */
+
+/* Estilo general de la aplicación */
+QMainWindow {
+    background-color: #000000;
+    font-family: "Courier New", "Terminal", monospace;
+    border: 2px solid #00FF00;
+    color: #00FF00;
+}
+
+/* Panel de navegación */
+QTreeView {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    font-size: 13px;
+    font-family: "Courier New", "Terminal", monospace;
+    padding: 4px;
+    color: #00FF00;
+    alternate-background-color: #001100;
+}
+
+QTreeView::item {
+    border: none;
+    padding: 4px;
+    height: 25px;
+    color: #00FF00;
+}
+
+QTreeView::item:selected {
+    background-color: #005500;
+    color: #FFFFFF;
+}
+
+QTreeView::item:hover {
+    background-color: #003300;
+}
+
+/* Botones del panel de navegación */
+QPushButton {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 6px 10px;
+    font-weight: bold;
+    color: #00FF00;
+    font-family: "Courier New", "Terminal", monospace;
+    min-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #002200;
+    border: 1px solid #00FF00;
+}
+
+QPushButton:pressed {
+    background-color: #003300;
+    color: #FFFFFF;
+}
+
+/* Editor de texto */
+QTextEdit {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: "Courier New", "Terminal", monospace;
+    font-size: 14px;
+    selection-background-color: #005500;
+    selection-color: #FFFFFF;
+    color: #00FF00;
+}
+
+/* Título de la nota */
+QLineEdit[class="note-title"] {
+    background-color: #001100;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 6px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Courier New", "Terminal", monospace;
+    margin-bottom: 8px;
+    color: #00FF00;
+}
+
+QLineEdit[class="note-title"]:focus {
+    border: 1px solid #00FF00;
+    background-color: #002200;
+}
+
+/* Barra de herramientas de formato */
+QToolBar {
+    background-color: #001100;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    spacing: 3px;
+    padding: 3px;
+}
+
+QToolBar QToolButton {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 4px;
+    color: #00FF00;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #002200;
+    border: 1px solid #00FF00;
+}
+
+QToolBar QToolButton:pressed {
+    background-color: #003300;
+    color: #FFFFFF;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #00AA00;
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: #00FF00;
+}
+
+/* Casillas de verificación para tareas */
+QCheckBox {
+    spacing: 8px;
+    font-family: "Courier New", "Terminal", monospace;
+    color: #00FF00;
+}
+
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #00AA00;
+    background-color: #000000;
+    border-radius: 0px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 1px solid #00AA00;
+    background-color: #000000;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid #00FF00;
+    background-color: #005500;
+}
+
+/* Menú contextual */
+QMenu {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 2px;
+    font-family: "Courier New", "Terminal", monospace;
+    color: #00FF00;
+}
+
+QMenu::item {
+    padding: 4px 25px 4px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    background-color: #003300;
+    color: #FFFFFF;
+    border: 1px solid #00FF00;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: 1px solid #00AA00;
+    background: #000000;
+    width: 15px;
+    margin: 15px 0 15px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #003300;
+    border: 1px solid #00AA00;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 1px solid #00AA00;
+    background: #001100;
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 1px solid #00AA00;
+    background: #001100;
+    height: 15px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #00AA00;
+    background: #000000;
+    height: 15px;
+    margin: 0 15px 0 15px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #003300;
+    border: 1px solid #00AA00;
+    min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: 1px solid #00AA00;
+    background: #001100;
+    width: 15px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 1px solid #00AA00;
+    background: #001100;
+    width: 15px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 3px 8px;
+    min-height: 22px;
+    color: #00FF00;
+    font-family: "Courier New", "Terminal", monospace;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 20px;
+    border-left: 1px solid #00AA00;
+}
+
+QComboBox::item {
+    background-color: #000000;
+    color: #00FF00;
+}
+
+QComboBox::item:selected {
+    background-color: #003300;
+    color: #FFFFFF;
+}
+
+/* Efectos adicionales */
+QLabel {
+    font-family: "Courier New", "Terminal", monospace;
+    color: #00FF00;
+}
+
+QLineEdit {
+    font-family: "Courier New", "Terminal", monospace;
+    color: #00FF00;
+    background-color: #000000;
+    border: 1px solid #00AA00;
+    border-radius: 0px;
+    padding: 3px;
+}
+
+/* Efectos de cursor parpadeante */
+QTextEdit {
+    color: #00FF00;
+    selection-color: #000000;
+    selection-background-color: #00FF00;
+}
+
+/* Efecto terminal - texto que aparece escrito caracter a caracter */
+QLabel#terminalLabel {
+    color: #00FF00;
+    font-family: "Courier New", "Terminal", monospace;
+    background-color: #000000;
+    border: none;
+}

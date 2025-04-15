@@ -1,0 +1,274 @@
+/* Tema Amiga Workbench */
+
+/* Estilo general de la aplicación */
+QMainWindow {
+    background-color: #0055AA;  /* Azul Amiga */
+    font-family: "Topaz", "Courier New", monospace;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+
+/* Panel de navegación */
+QTreeView {
+    background-color: #AAAAAA;  /* Gris Amiga */
+    border: 2px solid #000000;
+    font-size: 13px;
+    font-family: "Topaz", "Courier New", monospace;
+    padding: 4px;
+    color: #000000;
+}
+
+QTreeView::item {
+    border: none;
+    padding: 4px;
+    height: 25px;
+    color: #000000;
+}
+
+QTreeView::item:selected {
+    background-color: #FF8800;  /* Naranja Amiga */
+    color: #000000;
+}
+
+QTreeView::item:hover {
+    background-color: #CCCCCC;
+}
+
+/* Botones del panel de navegación */
+QPushButton {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 6px 10px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Topaz", "Courier New", monospace;
+    min-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #DDDDDD;
+}
+
+QPushButton:pressed {
+    background-color: #FF8800;  /* Naranja Amiga */
+    color: #000000;
+}
+
+/* Editor de texto */
+QTextEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: "Topaz", "Courier New", monospace;
+    font-size: 14px;
+    selection-background-color: #FF8800;  /* Naranja Amiga */
+    selection-color: #000000;
+    color: #000000;
+}
+
+/* Título de la nota */
+QLineEdit[class="note-title"] {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 6px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Topaz", "Courier New", monospace;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+QLineEdit[class="note-title"]:focus {
+    background-color: #DDDDDD;
+}
+
+/* Barra de herramientas de formato */
+QToolBar {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    spacing: 3px;
+    padding: 3px;
+}
+
+QToolBar QToolButton {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 4px;
+    color: #000000;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #DDDDDD;
+}
+
+QToolBar QToolButton:pressed {
+    background-color: #FF8800;  /* Naranja Amiga */
+    color: #000000;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #000000;
+}
+
+QSplitter::handle:horizontal {
+    width: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 3px;
+}
+
+QSplitter::handle:hover {
+    background-color: #FF8800;  /* Naranja Amiga */
+}
+
+/* Casillas de verificación para tareas */
+QCheckBox {
+    spacing: 8px;
+    font-family: "Topaz", "Courier New", monospace;
+    color: #FFFFFF;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    background-color: #AAAAAA;
+    border-radius: 0px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #AAAAAA;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #FF8800;  /* Naranja Amiga */
+}
+
+/* Menú contextual */
+QMenu {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 2px;
+    font-family: "Topaz", "Courier New", monospace;
+    color: #000000;
+}
+
+QMenu::item {
+    padding: 4px 25px 4px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    background-color: #FF8800;  /* Naranja Amiga */
+    color: #000000;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    width: 16px;
+    margin: 16px 0 16px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #DDDDDD;
+    border: 2px solid #000000;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    height: 16px;
+    margin: 0 16px 0 16px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #DDDDDD;
+    border: 2px solid #000000;
+    min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    width: 16px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 2px solid #000000;
+    background: #AAAAAA;
+    width: 16px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #AAAAAA;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 3px 8px;
+    min-height: 22px;
+    color: #000000;
+    font-family: "Topaz", "Courier New", monospace;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 20px;
+    border-left: 2px solid #000000;
+}
+
+QComboBox::item {
+    background-color: #AAAAAA;
+    color: #000000;
+}
+
+QComboBox::item:selected {
+    background-color: #FF8800;  /* Naranja Amiga */
+    color: #000000;
+}
+
+/* Efectos adicionales */
+QLabel {
+    font-family: "Topaz", "Courier New", monospace;
+    color: #FFFFFF;
+}
+
+QLineEdit {
+    font-family: "Topaz", "Courier New", monospace;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 3px;
+}

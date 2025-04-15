@@ -1,0 +1,88 @@
+/* Tema Retro Gaming para NoteLite */
+
+QWidget {  
+    background-color: #000000;
+    color: #0FFF00;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QMainWindow, QDialog { 
+    background-color: #000000; 
+}
+
+QPushButton { 
+    background-color: #0FFF00;
+    color: #000000;
+    border: 2px solid #FF0000;
+    border-radius: 0px;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover { 
+    background-color: #FF0000;
+    color: #FFFF00;
+}
+
+QLineEdit, QTextEdit, QListWidget { 
+    background-color: #000000;
+    color: #0FFF00;
+    border: 1px solid #0FFF00;
+    border-radius: 0px;
+    padding: 2px;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QTreeView { 
+    background-color: #000000;
+    color: #0FFF00;
+    border: 1px solid #0FFF00;
+    selection-background-color: #0FFF00;
+    selection-color: #000000;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QComboBox { 
+    background-color: #000000;
+    color: #0FFF00;
+    border: 1px solid #0FFF00;
+    border-radius: 0px;
+    padding: 1px 18px 1px 3px;
+}
+
+QMenuBar, QMenu { 
+    background-color: #000000;
+    color: #0FFF00;
+    border: 1px solid #0FFF00;
+}
+
+QMenu::item:selected, QMenuBar::item:selected { 
+    background-color: #0FFF00;
+    color: #000000;
+}
+
+QTabWidget::pane { 
+    border: 1px solid #0FFF00;
+    top: -1px;
+}
+
+QTabBar::tab { 
+    background-color: #000000;
+    color: #0FFF00;
+    border: 1px solid #0FFF00;
+    border-bottom: none;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+QTabBar::tab:selected { 
+    background-color: #0FFF00;
+    color: #000000;
+    font-weight: bold;
+}
+
+QStatusBar { 
+    background-color: #000000;
+    color: #0FFF00;
+    border-top: 1px solid #0FFF00;
+}

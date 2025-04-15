@@ -1,0 +1,83 @@
+/* Tema Terminal para NoteLite */
+
+QWidget {  
+    background-color: #000000;
+    color: #00FF00;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QMainWindow, QDialog { 
+    background-color: #000000; 
+}
+
+QPushButton { 
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #C0C0C0;
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+
+QPushButton:hover { 
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+QLineEdit, QTextEdit, QListWidget { 
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 0px;
+    padding: 2px;
+}
+
+QTreeView { 
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #808080;
+    selection-background-color: #C0C0C0;
+    selection-color: #000000;
+}
+
+QComboBox { 
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 0px;
+    padding: 1px 18px 1px 3px;
+}
+
+QMenuBar, QMenu { 
+    background-color: #000000;
+    color: #00FF00;
+}
+
+QMenu::item:selected, QMenuBar::item:selected { 
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+QTabWidget::pane { 
+    border: 1px solid #00FF00;
+    top: -1px;
+}
+
+QTabBar::tab { 
+    background-color: #000000;
+    color: #00FF00;
+    border: 1px solid #808080;
+    border-bottom: none;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+QTabBar::tab:selected { 
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+QStatusBar { 
+    background-color: #000000;
+    color: #00FF00;
+    border-top: 1px solid #00FF00;
+}
